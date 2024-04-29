@@ -1,1 +1,1 @@
-console.log("hello Ply!");
+return "hello Ply!";
