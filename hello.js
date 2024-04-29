@@ -1,8 +1,7 @@
-const args = ["correct", "args"]
+const correctInput = {"correct":undefined, "args":undefined};
 
-if (JSON.stringify(arguments) !== JSON.stringify(args)) {
-  throw new Error(`Function defined with incorrect arguments ${arguments}.
-    Correct arguments are ${args}`);
+if (Object.keys(correctInput).toString() !== Object.keys(input.input).toString()) {
+  throw new Error(`Function called with incorrect arguments '${Object.keys(input.input)}'. Correct arguments are '${Object.keys(correctInput)}'`);
 }
 
 return "hello Ply!";
